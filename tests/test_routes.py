@@ -3,7 +3,7 @@ Account API Service Test Suite
 
 Test cases can be run with the following:
   nosetests -v --with-spec --spec-color
-  coverage report -m  
+  coverage report -m
 """
 import os
 import logging
@@ -201,3 +201,4 @@ class TestAccountService(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         # Check for the CORS header
         self.assertEqual(response.headers.get('Access-Control-Allow-Origin'), '*')
+        
