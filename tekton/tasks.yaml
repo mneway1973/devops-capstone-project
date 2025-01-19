@@ -83,6 +83,6 @@ spec:
         pip install -qr requirements.txt
         pip install flask-talisman
         pip install flask-cors
-
+        
         echo "***** Running nosetests with: $(params.args)"
         nosetests $(params.args)
